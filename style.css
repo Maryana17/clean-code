@@ -18,7 +18,7 @@ body {
 }
 
 @media (max-width:768px) {
-    .picture { text-align: center;
+.picture { text-align: center;
 }
 }
 .main-element {
@@ -29,7 +29,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 .task-row-wrapper {
     display: flex;
@@ -38,7 +38,8 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
     list-style: none;
 }
 input,button{
