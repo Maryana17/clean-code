@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector(".content");
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit-btn");
-    var containsClass=listItem.classList.contains("edit-mode");
+    var containsClass=listItem.classList.contains(".edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -155,7 +155,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector(".check-box");
+    var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.edit-btn");
     var deleteButton=taskListItem.querySelector("button.delete-btn");
 
