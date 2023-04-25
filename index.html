@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo App</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" >
+        <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
+</head>
+
+<body>
+
+    <div class="picture">
+        <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+        <a class="more_inf" 
+         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div>
+
+    <div class="main">
+        <h3><label for="new-task">Add Item</label></h3>
+            <div class="wrapper">
+                <input id="new-task" class="content" type="text">
+                <button class="add-btn">Add</button>
+            </div>
+        <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li>
+                    <input class="check-box"  type="checkbox">
+                    <label class="task-label">Pay Bills</label>
+                    <input  class="content" type="text">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn"> <img src="./remove.svg" alt="remove"></button>
+                </li>
+
+                <li class="edit-mode">
+                    <input class="check-box"  type="checkbox">
+                    <label class="task-label">Go Shopping</label>
+                    <input class="content" type="text" value="Go Shopping" >
+                    <button class="edit-btn">Save</button>
+                    <button class="delete-btn"><img src="./remove.svg" alt="remove"></button>
+                </li>
+            </ul>
+        <h3>Completed</h3>
+            <ul id="completed-tasks">
+                <li>
+                    <input class="check-box"  type="checkbox" checked>
+                    <label class="task-label">See the Doctor</label>
+                    <input class="content" type="text" >
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn"><img src="./remove.svg" alt="remove"></button>
+                </li>
+            </ul>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
